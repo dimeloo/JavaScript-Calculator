@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mike's beautiful Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="CalculatorTitle">Mike's JS Calculator</h1>
+    <div class="calculate-container">
+        <div class="output">
+          <div id="screen-display">0</div>
+        </div>
+            <div class="button-input">
+                <button id="numbers" onclick="displayInput(1)" value="1">1</button>
+                <button id="numbers" onclick="displayInput(2)" value="2">2</button>
+                <button id="numbers" onclick="displayInput(3)" value="3">3</button>
+                <button id="numbers" onclick="displayInput(4)" value="4">4</button>
+                <button id="numbers" onclick="displayInput(5)" value="5">5</button>
+                <button id="numbers" onclick="displayInput(6)" value="6">6</button>
+                <button id="numbers" onclick="displayInput(7)" value="7">7</button>
+                <button id="numbers" onclick="displayInput(8)" value="8">8</button>
+                <button id="numbers" onclick="displayInput(9)" value="9">9</button>
+                <button id="numbers" onclick="displayInput(0)" value="0">0</button>
+                <button id="operators" onclick="displayInput('.')" value=".">.</button>
+                <button id="operators" onclick="displayInput('+')" value="+">+</button>
+                <button id="operators" onclick="displayInput('-')" value="-">-</button>
+                <button id="operators" onclick="displayInput('/')" value="/">/</button>
+                <button id="operators" onclick="displayInput('*')" value="*">x</button>
+                <button id="operators" onclick="displayInput('%')" value="%">%</button>
+                <button id="calculate-answer" onclick="calculatingAnswer(outputAnswer)">=</button>
+                <button id="clear-screen" onclick="clearScreen()">CLR</button>
+    
+            </div>
+        </div>
+    </div>
+    <script src="/calculatorScript.js"></script>
+    <script src="/string-math.js"></script>
+  </body>
+</html>

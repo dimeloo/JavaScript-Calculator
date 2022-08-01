@@ -12,6 +12,25 @@
 
 // Welcome to the best calculator on the planet
 
+//clearScreen()
+//answer()
+//display()
+
+/* let calculatorElement = document.getElementById('displayResults')
+let calculatedAnswer = document.getElementById('calculateAnswer')
+let startingValue = 0
+
+function calculateAnswer() {
+  let calculate = startingValue + '  -  '
+  calculatedAnswer.innerText += calculate
+}
+
+function display() {}
+
+function clearScreen() {} */
+
+
+
 function add(firstNumber, secondNumber) {
   return firstNumber + secondNumber
 }
@@ -33,17 +52,17 @@ const prompt = require('prompt-sync')()
 const name = prompt('.....Who are you? Please give me your name: ')
 console.log(`Greetings ${name}! I hope you are ready for something special.`)
 
-let userAnswer = 'No' 
+let userAnswer = 'No'
 
 do {
-
-
   const operation = prompt('Which mathematical operation do you want to use? ')
   console.log(`This is your operator ${operation}`)
 
   const num1 = prompt('Give me your first number: ')
   const num2 = prompt('Give me your second number: ')
-  console.log(`Your first number is ${num1} and your second number is ${num2}...let's see what we can do with this`)
+  console.log(
+    `Your first number is ${num1} and your second number is ${num2}...let's see what we can do with this`
+  )
 
   const firstNumber = Number(num1)
   const secondNumber = Number(num2)
@@ -57,10 +76,10 @@ do {
   } else if (operation === '/') {
     console.log('Result:', divide(firstNumber, secondNumber))
   } else {
-    console.log(`I'm not sure what you are trying to accomplish... I don't know how to use this: ${operation}`)
+    console.log(
+      `I'm not sure what you are trying to accomplish... I don't know how to use this: ${operation}`
+    )
   }
- 
+
   userAnswer = prompt('Would you like to go again? Please enter Yes or No: ')
-
 } while (userAnswer != 'No')
-
